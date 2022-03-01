@@ -1,0 +1,90 @@
+ul{
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+li{
+    margin-top: 10px;
+    list-style: none;
+    height: 60px;
+   
+    
+    
+}
+li>#removeButton{
+    justify-content: right;
+    float: right;
+    border-radius: 25px;
+    
+}
+li>#doneButton{
+    justify-content: right;
+    /* margin-top: auto; */
+    float:right;
+}
+
+.ticked_checkbox{
+    float: left;
+    padding-top: 2px;
+    margin-right: 10px;
+}
+.font_ticked_todo{
+    font-size: medium;
+}
+
+#removeButton {
+    appearance: none;
+    margin-left: 10px;
+    background-color: #b80505;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 10px 15px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#removeButton:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+}
+
+#removeButton:hover {
+    
+    background-color: #a52525;
+}
+
+#removeButton:focus {
+    box-shadow: rgba(177, 46, 46, 0.4) 0 0 0 3px;
+    outline: none;
+}
+
+#removeButton:disabled {
+    background-color: #b85454;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+}
+
+#removeButton:active {
+    background-color: #a52525;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.completedTodos{
+    text-align: center;
+}

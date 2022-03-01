@@ -1,0 +1,10 @@
+.main{
+    padding: 25px;
+    font-size: large;
+    width: 500px;
+    border-radius: 30px;
+    background: #F6F9FE;;
+    box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+    
+}
