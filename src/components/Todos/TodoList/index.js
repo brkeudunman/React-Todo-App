@@ -4,6 +4,7 @@ import { Checkbox,Divider } from 'semantic-ui-react'
 
 
 import {useState} from 'react'
+import toDoService from '../../../services/toDoService'
 
 
 
@@ -12,13 +13,18 @@ function TodoList({todos,completedTodoList}) {
   var [new_todos,setTodos]=useState(todos)
   var [new_CompletedTodoList,setCompletedTodoList] = useState(completedTodoList)
 
-
+  
   var state = false
 
+  let todoAPI = new toDoService();
 
   const removeTodo = (index) => {
     new_todos=todos.splice(index,1)
     setTodos(new_todos)
+    
+    todoAPI.removeData(todos[index]).then((response)=>{ //API REMOVE
+      console.log(response)
+    })
   }
 
   const removeCompletedTodo = (index)=>{

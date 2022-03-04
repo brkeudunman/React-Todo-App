@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
+import toDoService from '../../../services/toDoService'
 import './index.css'
 
 function Form({todos,setTodos}) {
@@ -11,6 +12,8 @@ function Form({todos,setTodos}) {
     setInput(event.target.value)
   }
 
+  let todoAPI = new toDoService();
+
   const onSubmit = (event)=>{
       event.preventDefault();
       if(input===""){
@@ -18,6 +21,12 @@ function Form({todos,setTodos}) {
       }
       setTodos([...todos,input])
       setInput(initialValue) 
+
+      todoAPI.addData(input).then((response=>{
+         console.log("test response")
+         console.log(response)
+      })) //API ADD 
+
   }
 
   return (
