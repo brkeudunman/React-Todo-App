@@ -4,4 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - [x] Erasing extra elements
 - [ ] Update the website with better visualization and colors
-- [ ] It will be tied with backend
+- [x] It will be tied with backend
+
+
+[In Vercel App](https://react-todo-app-puce.vercel.app/)
