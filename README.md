@@ -6,7 +6,3 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [ ] Update the website with better visualization and colors
 - [x] It will be tied with backend
 
-
-[In Vercel App](https://react-todo-app-puce.vercel.app/) 
-- But In Vercel App, there is no link between backend at all.
-
