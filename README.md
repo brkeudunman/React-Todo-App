@@ -7,4 +7,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] It will be tied with backend
 
 
-[In Vercel App](https://react-todo-app-puce.vercel.app/)
+[In Vercel App](https://react-todo-app-puce.vercel.app/) 
+- But In Vercel App, there is no link between backend at all.
+
